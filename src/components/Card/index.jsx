@@ -8,21 +8,40 @@ import { ReactComponent as FillHeart } from "../../assets/heart-fill.svg";
 const Card = () => {
   const [order, setOrder] = useRecoilState(orderAtom);
   const dumi = [
-    { idx: 0, text: "아니, 기숙사 아침운동 없애버려 주세요." },
-    { idx: 1, text: "아니, 기숙사 아침운동 없애버려 주세요." },
-    { idx: 2, text: "아니, 기숙사 아침운동 없애버려 주세요." },
-    { idx: 3, text: "아니, 기숙사 아침운동 없애버려 주세요." },
+    {
+      idx: 1,
+      content: "아니, 기숙사 아침운동 없애버려 주세요.",
+      likeEntities: [{ idx: "1", author: "asdf" }],
+    },
+    {
+      idx: 2,
+      content: "아니, 기숙사 아침운동 없애버려 주세요.",
+      likeEntities: [{ idx: "2", author: "asdf" }],
+    },
+    {
+      idx: 3,
+      content: "아니, 기숙사 아침운동 없애버려 주세요.",
+      likeEntities: [{ idx: "3", author: "asdf" }],
+    },
+    {
+      idx: 4,
+      content: "아니, 기숙사 아침운동 없애버려 주세요.",
+      likeEntities: [{ idx: "4", author: "asdf" }],
+    },
   ];
 
   const CardItem = dumi.map((item) => (
     <div className="CardWrapper" key={item.idx}>
       <div className="CardWrapper-Card">
         <div className="CardWrapper-Card-Heart">
+          <span className="CardWrapper-Card-Heart-Count">
+            {item.likeEntities.length}
+          </span>
           <Heart />
         </div>
-        <div className="CardWrapper-Card-Text">{item.text}</div>
+        <div className="CardWrapper-Card-Text">{item.content}</div>
       </div>
-      {Math.round(item.idx / 2) % 2 ? (
+      {Math.round((item.idx - 1) / 2) % 2 ? (
         <div
           className="CardWrapper-Bottom"
           style={{ backgroundColor: "#8170FA" }}
