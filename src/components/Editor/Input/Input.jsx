@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import { useRecoilState } from 'recoil';
 import { addPostContent } from '../../../atom/atom';
 import '../Input/input.scss';
