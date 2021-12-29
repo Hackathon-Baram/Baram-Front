@@ -5,11 +5,11 @@ import Card from "./components/Card";
 
 const App = () => {
   return (
-    <>
+    <div className="wrapper">
       <Header />
       <Snowfall />
-      <Card text={"아니, 기숙사 아침운동 없애버려 주세요."} />
-    </>
+      <Card />
+    </div>
   );
 };
 

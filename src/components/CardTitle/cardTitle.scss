@@ -1,0 +1,38 @@
+.CardTitle {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 713px;
+  padding: 0px 10px;
+  margin-bottom: 26px;
+  &-Title {
+    color: #72afe8;
+    font-weight: bold;
+    font-size: 20px;
+    & > span {
+      color: #5ba3e4;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  &-Order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    &-new {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 15px;
+      padding-right: 4px;
+      border-right: 2.5px solid #72afe8;
+    }
+    &-like {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 15px;
+      padding-left: 4px;
+    }
+  }
+}
