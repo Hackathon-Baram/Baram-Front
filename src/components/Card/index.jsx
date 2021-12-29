@@ -1,4 +1,6 @@
 import "./card.scss";
+import axios from "axios";
+import { useEffect } from "react";
 import CardTitle from "../CardTitle";
 import { useRecoilState } from "recoil";
 import { orderAtom } from "../../atom/atom";
@@ -7,6 +9,22 @@ import { ReactComponent as FillHeart } from "../../assets/heart-fill.svg";
 
 const Card = () => {
   const [order, setOrder] = useRecoilState(orderAtom);
+
+  const getPost = async () => {
+    try {
+      const { data } = await axios.get(`http://172.20.10.8:8080/post`, {
+        headers: { "Access-Control-Allow-Origin": "*" },
+      });
+      return data;
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  useEffect(() => {
+    getPost();
+  }, []);
+
   const dumi = [
     {
       idx: 1,

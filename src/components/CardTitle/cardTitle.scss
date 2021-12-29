@@ -22,6 +22,7 @@
     text-align: center;
     align-items: center;
     &-new {
+      transition: 0.6s;
       cursor: pointer;
       font-weight: bold;
       font-size: 15px;
@@ -29,6 +30,7 @@
       border-right: 2.5px solid #72afe8;
     }
     &-like {
+      transition: 0.4s;
       cursor: pointer;
       font-weight: bold;
       font-size: 15px;
