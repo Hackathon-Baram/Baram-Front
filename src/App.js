@@ -1,11 +1,12 @@
-import "../src/styles/reset.scss";
 import Snowfall from "react-snowfall";
+import Header from "./components/Header";
+import "../src/styles/reset.scss";
 
 const App = () => {
   return (
     <>
+      <Header />
       <Snowfall />
-      <h1 color="black">DFAS</h1>
     </>
   );
 };

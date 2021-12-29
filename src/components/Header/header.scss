@@ -1,0 +1,8 @@
+.Header {
+  width: 100vw;
+  height: 125px;
+  & > svg {
+    margin-top: 79px;
+    margin-left: 123px;
+  }
+}
