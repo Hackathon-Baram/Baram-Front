@@ -1,0 +1,13 @@
+.Footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  height: 20px;
+  background-color: #72afe8;
+  &-Person {
+    position: absolute;
+    bottom: 22px;
+    right: 50px;
+  }
+}
+

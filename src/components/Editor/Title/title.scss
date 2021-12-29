@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 .Title {
   width: 30vw;
   height: 450px;
@@ -9,7 +14,7 @@
     left: 6.5%;
     text-align: left;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
     color: #5BA3E4;
 
     &-sub {
