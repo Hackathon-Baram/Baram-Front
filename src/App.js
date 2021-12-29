@@ -11,7 +11,7 @@ const App = () => {
     <>
       <div className="wrapper">
         <Header />
-        {/* <Card /> */}
+        <Card />
       </div>
       <Footer />
       <Snowfall />
