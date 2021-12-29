@@ -9,6 +9,12 @@
     color: #72afe8;
     font-weight: bold;
     font-size: 20px;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
     & > span {
       color: #5ba3e4;
       font-weight: bold;
