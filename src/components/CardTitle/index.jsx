@@ -19,7 +19,7 @@ const CardTitle = () => {
         우리들의 <span>바람.</span>
       </span>
       <span className="CardTitle-Order">
-        {order ? (
+        {/* {order ? (
           <span
             className="CardTitle-Order-new"
             onClick={() => onClickNew()}
@@ -52,7 +52,7 @@ const CardTitle = () => {
           >
             인기순
           </span>
-        )}
+        )} */}
       </span>
     </div>
   );

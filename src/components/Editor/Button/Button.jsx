@@ -24,8 +24,16 @@ const Button = () => {
 
   const addPost = async () => {
     try {
+      if (postContent.length >= 101) {
+        toast.error("100자 이내로 작성해주세요!", {
+          position: "top-right",
+        });
+
+        return;
+      }
+
       if (postContent === "") {
-        toast.error("바람 등록 실패!", {
+        toast.error("내용을 적어주세요!", {
           position: "top-right",
         });
 

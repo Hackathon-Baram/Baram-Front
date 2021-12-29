@@ -12,5 +12,10 @@ export const postAtom = atom({
 
 export const addPostContent = atom({
   key: "addPostContent",
-  default: '',
+  default: "",
+});
+
+export const modalAtom = atom({
+  key: "modalAtom",
+  default: false,
 });
