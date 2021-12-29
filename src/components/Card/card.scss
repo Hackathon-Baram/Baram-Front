@@ -4,12 +4,16 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 30px;
   column-gap: 35px;
+  margin-bottom: 100px;
 }
 
 .CardWrap {
+  position: absolute;
+  right: 183px;
   width: 713px;
   display: inline-flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .CardWrapper {
@@ -30,6 +34,14 @@
       display: flex;
       width: 100%;
       justify-content: right;
+      text-align: center;
+      align-items: start;
+      &-Count {
+        font-size: 15px;
+        color: #9b9b9b;
+        font-weight: bold;
+        padding-right: 2px;
+      }
       & > svg {
         cursor: pointer;
       }
