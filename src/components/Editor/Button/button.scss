@@ -1,0 +1,18 @@
+.Button {
+  width: 2vw;
+  height: 100px;
+
+  &-wrap {
+    position: fixed;
+    top: 71%;
+    left: 28.5%;
+    background-color: #87B9E7;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+}
