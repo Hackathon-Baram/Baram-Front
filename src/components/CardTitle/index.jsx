@@ -4,6 +4,15 @@ import { orderAtom } from "../../atom/atom";
 
 const CardTitle = () => {
   const [order, setOrder] = useRecoilState(orderAtom);
+
+  const onClickNew = () => {
+    setOrder(true);
+  };
+
+  const onClickLike = () => {
+    setOrder(false);
+  };
+
   return (
     <div className="CardTitle">
       <span className="CardTitle-Title">
@@ -13,7 +22,7 @@ const CardTitle = () => {
         {order ? (
           <span
             className="CardTitle-Order-new"
-            onClick={() => setOrder(true)}
+            onClick={() => onClickNew()}
             style={{ color: "#72afe8" }}
           >
             최신순
@@ -21,7 +30,7 @@ const CardTitle = () => {
         ) : (
           <span
             className="CardTitle-Order-new"
-            onClick={() => setOrder(true)}
+            onClick={() => onClickNew()}
             style={{ color: "#dddddd" }}
           >
             최신순
@@ -30,7 +39,7 @@ const CardTitle = () => {
         {order ? (
           <span
             className="CardTitle-Order-like"
-            onClick={() => setOrder(false)}
+            onClick={() => onClickLike()}
             style={{ color: "#ddd" }}
           >
             인기순
@@ -38,7 +47,7 @@ const CardTitle = () => {
         ) : (
           <span
             className="CardTitle-Order-like"
-            onClick={() => setOrder(false)}
+            onClick={() => onClickLike()}
             style={{ color: "#72afe8" }}
           >
             인기순
