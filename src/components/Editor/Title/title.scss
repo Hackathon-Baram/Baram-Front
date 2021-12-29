@@ -7,6 +7,11 @@
   width: 30vw;
   height: 450px;
   margin-right: 0;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 
   &-wrap {
     position: fixed;
@@ -15,10 +20,10 @@
     text-align: left;
     font-size: 40px;
     font-weight: 700;
-    color: #5BA3E4;
+    color: #5ba3e4;
 
     &-sub {
-      color: #8170FA;
+      color: #8170fa;
     }
   }
 }

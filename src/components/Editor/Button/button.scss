@@ -1,12 +1,17 @@
 .Button {
   width: 2vw;
   height: 100px;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 
   &-wrap {
     position: fixed;
     top: 71%;
     left: 28.5%;
-    background-color: #87B9E7;
+    background-color: #87b9e7;
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
