@@ -1,0 +1,16 @@
+.Input {
+  width: 28vw;
+  height: 290px; 
+  position: fixed;
+  box-shadow: 0px 0px 20px #87b9e7e8;
+  left: 6.5%;
+  top: 42%;
+  border-radius: 20px;
+
+  &-wrap {
+    width: 28vw;
+    height: 290px;
+    resize: none;
+    padding: 3%;
+  }
+}
