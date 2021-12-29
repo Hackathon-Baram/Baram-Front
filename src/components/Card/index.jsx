@@ -37,10 +37,10 @@ const Card = () => {
   ));
 
   return (
-    <>
+    <div className="CardWrap">
       <CardTitle />
       <div className="Cards">{CardItem}</div>
-    </>
+    </div>
   );
 };
 

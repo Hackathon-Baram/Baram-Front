@@ -6,6 +6,12 @@
   column-gap: 35px;
 }
 
+.CardWrap {
+  width: 713px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
 .CardWrapper {
   display: inline-flex;
   flex-direction: column;
